@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    path: test
+    path: kubernetes
     repoURL: 'https://github.com/venu67776/Agro-cd.git'
     targetRevision: HEAD
   destination:
