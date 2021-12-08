@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: todo-app
+  namespace: agrocd
+spec:
+  project: default
+
+  source:
+    path: test
+    repoURL: 'https://github.com/venu67776/Agro-cd.git'
+    targetRevision: HEAD
+  destination:
+    namespace: myapp
+    server: 'https://kubernetes.default.svc'
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true

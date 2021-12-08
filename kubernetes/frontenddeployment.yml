@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+        - image: venuzs/frontend:v4
+          name: frontend
+          stdin: true
+          tty: true
+          ports:
+            - containerPort: 3000
+          env:
+            - name: BACKEND_IP
+              value: "34.224.29.186"
