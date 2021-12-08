@@ -18,7 +18,7 @@ spec:
           stdin: true
           tty: true
           ports:
-            - containerPort: 80
+            - containerPort: 3000
           env:
             - name: BACKEND_IP
               value: "34.239.117.31"
