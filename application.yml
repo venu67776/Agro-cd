@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    path: kubernetes
+    path: test
     repoURL: 'https://github.com/venu67776/Argo-cd.git'
     targetRevision: HEAD
   destination:
