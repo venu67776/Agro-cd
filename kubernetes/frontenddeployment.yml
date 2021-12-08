@@ -21,4 +21,4 @@ spec:
             - containerPort: 3000
           env:
             - name: BACKEND_IP
-              value: "3.86.162.16"
+              value: "34.201.172.235"
