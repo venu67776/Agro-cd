@@ -8,7 +8,7 @@ spec:
 
   source:
     path: test
-    repoURL: 'https://github.com/venu67776/Agro-cd.git'
+    repoURL: 'https://github.com/venu67776/Argo-cd.git'
     targetRevision: HEAD
   destination:
     namespace: myapp
