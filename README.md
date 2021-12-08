@@ -1,4 +1,4 @@
-# Agro-cd
+# Argo-cd
 
 To create a k3d cluster with yaml file
 
@@ -16,7 +16,7 @@ ports:
 command:
 k3d cluster create --config k3d.yaml 
 
-To install Agro-cd in cluster:
+To install Argo-cd in cluster:
 
 kubectl create namespace argocd
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
