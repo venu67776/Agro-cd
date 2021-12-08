@@ -9,7 +9,7 @@ image: rancher/k3s:v1.20.4-k3s1
 servers: 1
 agents: 2
 ports:
-  - port: 8080:80
+  - port: 3000:80
     nodeFilters:
       - loadbalancer
 
