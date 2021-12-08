@@ -1,6 +1,6 @@
 # Agro-cd
 
-<!-- To create a k3d cluster with yaml file
+To create a k3d cluster with yaml file
 
 kind: Simple
 apiVersion: k3d.io/v1alpha2
@@ -14,7 +14,7 @@ ports:
       - loadbalancer
 
 command:
-k3d cluster create --config k3d.yaml  -->
+k3d cluster create --config k3d.yaml 
 
 To install Agro-cd in cluster:
 
