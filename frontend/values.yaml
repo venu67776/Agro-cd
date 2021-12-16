@@ -37,9 +37,9 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
-  type: ClusterIP
+  type: NodePort
   port: 3000
-  containerPort: 3000
+  
 
 ingress:
   enabled: false
@@ -84,4 +84,4 @@ affinity: {}
 
 examplemap:
 name: BACKEND_IP
-value: "3.92.61.247"
+value: "34.201.172.235"
