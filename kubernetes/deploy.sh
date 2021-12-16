@@ -1,3 +1,4 @@
+#!bin/bash
 kubectl apply -f frontenddeployment.yml
 kubectl apply -f frontend-service.yml
 kubectl apply -f backenddeployment.yml
