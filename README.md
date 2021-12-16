@@ -1,17 +1,5 @@
 # Argo-cd
 
-To create a k3d cluster with yaml file
-
-kind: Simple
-apiVersion: k3d.io/v1alpha2
-name: k3d-cluster
-image: rancher/k3s:v1.20.4-k3s1
-servers: 1
-agents: 2
-ports:
-  - port: 3000:80
-    nodeFilters:
-      - loadbalancer
 
 command:
 k3d cluster create --config k3d.yaml 
